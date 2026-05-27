@@ -24,9 +24,9 @@ export default function Footer(){
         },
     ]
     return <div className="bg-[#1A1A1A] w-full py-10 px-32 max-lg:px-6 max-md:px-5 flex flex-col items-center justify-center">
-        <Arrow data-aos="fade-up"  className="w-8 h-8"/>
-        <h4 data-aos="fade-up"  className='font-bold tracking-widest text-white text-2xl mt-5 mb-8'>BACK TO TOP</h4>
-        <div data-aos="fade-up"  className='flex items-center justify-between gap-5 mb-8'>
+        <Arrow   className="w-8 h-8"/>
+        <h4  className='font-bold tracking-widest text-white text-2xl mt-5 mb-8'>BACK TO TOP</h4>
+        <div  className='flex items-center justify-between gap-5 mb-8'>
             {
             listLink.map((l,index)=>{
                 return <a key={index} href={l.href} >
@@ -35,6 +35,6 @@ export default function Footer(){
             })
         }
         </div>
-        <p data-aos="fade-up"  className='text-white'> <strong>@2020 Tomasz Gajda</strong> All Rights Reserved.</p>
+        <p  className='text-white'> <strong>@2020 Tomasz Gajda</strong> All Rights Reserved.</p>
     </div>
 }
